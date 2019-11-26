@@ -1,0 +1,14 @@
+.componentFlexButton > a.text{
+  color: white;;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 12px 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.componentFlexButton > a.text:hover {
+  color: violet;
+}
+

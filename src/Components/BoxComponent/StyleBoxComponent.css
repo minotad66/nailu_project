@@ -1,0 +1,117 @@
+.mainBoxContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 100%;
+}
+
+.mainBoxContainer > .titles {
+  margin: 10px;
+} 
+
+.titles + .caseBox {
+  margin-top: 0px;
+}
+
+.caseBox, .caseBoxReverse {
+  display: flex;
+  height: 22em;
+  margin: 20px 0 0 0;
+}
+
+.caseBox:hover, .caseBoxReverse:hover {
+  border-top:solid 3px  rgba(199, 41, 152, 0.938);
+  border-bottom:solid  3px rgba(199, 41, 152, 0.938);
+  transition: all .1s;
+}
+
+.caseBoxReverse {
+  flex-direction: row-reverse;
+}
+.img, .textBox {
+  height: 100%;
+  width: 50%;
+}
+.img {
+  object-fit: cover;
+}
+
+.textBox > .link {
+  align-self: center;
+}
+
+.textBox {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  flex-direction: column;
+  background: #904973f5;
+}
+
+.textBox > .btn {
+  align-self: center;
+  position: absolute;
+  bottom: 5px;
+}
+
+.dateNumberBox {
+  font-size: 3em;
+  margin: 2% 5% 0 5%;
+  font-weight: 100;
+}
+.dateTextBox {
+  font-size: 2em;
+  padding-bottom: 10px;
+  margin: 0 0 0 15%;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+.textMainConteiner {
+  overflow: auto;
+  height: 80%;
+}
+
+.textMainConteiner::-webkit-scrollbar{
+  width: 5px;     
+  height: 5px;   
+ 
+} 
+
+.textMainConteiner::-webkit-scrollbar-thumb {
+  background-color: rgba(218, 118, 151, 0.582);
+  border-radius: 50px;
+}
+
+.infoBox {
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+  text-align: justify;
+}
+
+@media (max-width: 761px) {
+  .caseBox, .caseBoxReverse {
+      flex-direction: column;
+      height: auto;
+  }
+  .caseBox:hover, .caseBoxReverse:hover {
+    border: none;
+  }
+
+  .img, .textBox {
+      min-width: 100%;
+      height: 22em;
+  }
+  .textBox {
+    align-items: center;
+    margin: 0;
+  }
+  .dateTextBox {
+    margin: 0;
+  }
+  .infoBox {
+    text-align: center;
+  }
+}
+ 
